@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.53" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paperchain data onboarding</title>
+
+    
+    <link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form name="data-onboarding" method="POST" id="signup-form" autocomplete="off" _lpchecked="1" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return checkForm(this);" class="signup-form" enctype="multipart/form-data">
+                <h3>
+                    Account
+                </h3>
+                <fieldset>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <p class="form-heading">By clicking next, you agree to the <a href="https://paperchain.io/terms-of-service/" target="_blank">Terms of Service</a> and <a href="https://paperchain.io/privacy-policy/" target="_blank">Privacy Policy</a></p>
+                            <p class="form-terms">tl;dr<br>
+
+✅ You agree to provide API, FTP and/or static data access to daily trends data from your DSPs and/or distribution channels<br>
+
+✅ You accept pricing data shown in the Paperchain app is for marketing purposes only, and is <strong>not</strong> royalty or accounting data <br>
+
+✅ Termination of account implies deletion of your API credentials, stored trends data and accounting data in the Paperchain app<br></p>
+
+                        </div>
+
+                    </div>
+
+
+                </fieldset>
+
+                <h3>
+                    Apple
+                </h3>
+                <fieldset>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="appvid">Apple Music Vendor ID</label>
+                      <input class="form-input" type="text" name="appvid" id="appvid" />
+                        <label for="apptoken">Apple Music Access Token</label>
+                        <input type="text" name="apptoken" id="apptoken" />
+                    </div>
+                      <div class="form-group">
+                        <p class="form-info-heading">You will need your Vendor ID and Access Token.</p>
+                        <p class="form-info-text">
+
+<strong>Vendor ID</strong> can be found on your <a href="https://itunesconnect.apple.com/login" target="_blank">iTunes Connect Account</a>. Go to Payment and Financial Reports page to find it.</p>
+
+<p class="form-info-text"><strong>Access Token</strong> can be found on your <a href="https://itunesconnect.apple.com/login" target="_blank">iTunes Connect Account</a>. Go to Sales and Trends -> Reports -> About Reports -> Generate Access Token.<br></p>
+                      </div>
+
+                  </div>
+
+                </fieldset>
+
+                <h3>
+                    Spotify
+                </h3>
+                <fieldset>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="spotcid">Spotify Client ID</label>
+                      <input class="form-input" type="text" name="spotcid" id="spotcid" />
+                        <label for="spotsecret">Spotify Client Secret</label>
+                        <input type="text" name="spotsecret" id="spotsecret" />
+                    </div>
+                    <div class="form-group">
+                      <p class="form-info-text">In order to configure this integration, we need to access your data from Spotify Standard Bulk API using your Client ID and Client Secret API credentials.</p>
+
+<p class="form-info-text">In case you're not already setup, you can <a href="https://analytics.spotify.com/c/api/" target="_blank">request access here</a>.</p>
+                    </div>
+
+                  </div>
+
+                </fieldset>
+
+                <h3>
+                    Merlin
+                </h3>
+                <fieldset>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="merlname">Merlin FTP Username</label>
+                      <input class="form-input" type="text" name="merlname" id="merlname" />
+                        <label for="merlpword">Merlin FTP Password</label>
+                        <input type="text" name="merlpword" id="merlpword" />
+                    </div>
+                    <div class="form-group">
+                      <p class="form-info-text">You will need your Merlin FTP Username and Password.</p>
+                    </div>
+
+                  </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="assets/vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
