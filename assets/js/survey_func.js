@@ -1,7 +1,7 @@
 	/*  Wizard */
 	jQuery(function ($) {
 		"use strict";
-		$('form#wrapped').attr('action', 'survey.php');
+		$('form#wrapped').attr('action', '/onboarding-submit/');
 		$("#wizard_container").wizard({
 			stepsWrapper: "#wrapped",
 			submit: ".submit",
@@ -49,7 +49,7 @@
 		});
 	});
 
-// Summary 
+// Summary
 function getVals(formControl, controlType) {
 	switch (controlType) {
 
