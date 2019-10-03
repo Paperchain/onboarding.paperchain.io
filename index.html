@@ -11,11 +11,11 @@
     <title>Let's get your data connected to Paperchain</title>
 
     
-    <link rel="shortcut icon" href="img/favicon.ico" type="assets/image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="assets/img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="assets/img/apple-touch-icon-144x144-precomposed.png">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="assets/image/x-icon">
+    <link rel="apple-touch-icon" type="assets/image/x-icon" href="assets/img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="assets/image/x-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="assets/image/x-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="assets/image/x-icon" sizes="144x144" href="assets/img/apple-touch-icon-144x144-precomposed.png">
 
     
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
@@ -69,6 +69,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 						<p>To connect your data, please continue creating your account.</p>
+            <p><strong>Please enter "N/A" for credentials you do not currently have access to.</strong></p>
 					</div>
 					<div class="copy">© 2019 Paperchain Inc.</div>
 				</div>
@@ -90,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="step">
 									<h3 class="main_question"><strong>1/4</strong>Account details.</h3>
 									<div class="form-group">
-										<input type="email" name="email" class="form-control required" placeholder="Your Email">
+										<input type="email" name="email" id="email" class="form-control required" placeholder="Your Email">
 									</div>
 									<div class="form-group">
                     <p>You agree to the <a href="https://paperchain.io/terms-of-service" target="_blank">Terms of Service</a> and <a href="https://paperchain.io/privacy-policy" target="_blank">Privacy Policy</a>:</p>
@@ -188,6 +189,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	
 	<script src="assets/js/survey_func.js"></script>
+
+  <script>
+  var emailField = document.getElementById("email");
+  emailField.value = getParameterByName("email");
+
+function getParameterByName(name) 
+{
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.href);
+    if (results == null) return "";
+    else return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
 
 </body>
 </html>
