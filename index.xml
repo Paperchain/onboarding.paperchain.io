@@ -6,9 +6,19 @@
     <description>Recent content on Get Paperchain — real-time revenue analytics for the music industry.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 10 Dec 2018 16:51:15 +1000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Thank you!</title>
+      <link>/onboarding-submit/</link>
+      <pubDate>Mon, 10 Dec 2018 16:51:15 +1000</pubDate>
+      
+      <guid>/onboarding-submit/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

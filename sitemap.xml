@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/onboarding-submit/</loc>
+    <lastmod>2018-12-10T16:51:15+10:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
+    <lastmod>2018-12-10T16:51:15+10:00</lastmod>
     <priority>0</priority>
   </url>
   
